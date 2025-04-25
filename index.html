@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HexTrait Selector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>HexTrait Selector</h1>
+
+    <section id="image-panel">
+      <img src="assets/example-entity.jpg" alt="Entity to Classify" id="entity-image">
+    </section>
+
+    <section id="control-panel">
+      <label>Select exactly <span id="required-count">8</span> traits:</label>
+      <div id="traits-container"></div>
+      <p id="count-warning" hidden>You've selected too many traits!</p>
+    </section>
+
+    <section id="output-panel">
+      <h2>Semantic Code</h2>
+      <div>
+        <strong>Binary:</strong> <span id="binary-output">00000000 00000000 00000000 00000000</span><br>
+        <strong>Hex:</strong> <span id="hex-output">00 00 00 00</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
