@@ -15,9 +15,25 @@
     </section>
 
     <section id="control-panel">
-      <label>Select exactly <span id="required-count">8</span> traits:</label>
-      <div id="traits-container"></div>
+      <label>Selected Traits: <span id="selected-count">0</span> / <span id="required-count">8</span></label>
       <p id="count-warning" hidden>You've selected too many traits!</p>
+
+      <details open>
+        <summary><strong>Physical</strong></summary>
+        <div id="layer-Physical" class="layer-group"></div>
+      </details>
+      <details>
+        <summary><strong>Functional</strong></summary>
+        <div id="layer-Functional" class="layer-group"></div>
+      </details>
+      <details>
+        <summary><strong>Abstract</strong></summary>
+        <div id="layer-Abstract" class="layer-group"></div>
+      </details>
+      <details>
+        <summary><strong>Social</strong></summary>
+        <div id="layer-Social" class="layer-group"></div>
+      </details>
     </section>
 
     <section id="output-panel">
@@ -26,9 +42,10 @@
         <strong>Binary:</strong> <span id="binary-output">00000000 00000000 00000000 00000000</span><br>
         <strong>Hex:</strong> <span id="hex-output">00 00 00 00</span>
       </div>
+      <div id="comparison-result"></div>
     </section>
-  </main>
 
-  <script src="app.js"></script>
+    <script src="app.js"></script>
+  </main>
 </body>
 </html>
